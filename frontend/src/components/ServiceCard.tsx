@@ -26,7 +26,7 @@ export default function ServiceCard({ service }: { service: Service }) {
 
   return (
     <div className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white p-6 transition-shadow hover:shadow-[0_8px_30px_-12px_rgba(16,18,31,0.15)]">
-      <div className="pointer-events-none absolute -right-6 -top-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className="pointer-events-none absolute right-6 top-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <GrowthMark heights={[14, 22, 30, 40]} barWidth={7} />
       </div>
 

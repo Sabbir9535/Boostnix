@@ -152,17 +152,6 @@ export default function OrderForm({ service }: { service: Service }) {
         </Field>
       </fieldset>
 
-      <fieldset className="space-y-5">
-        <legend className="font-display text-lg font-semibold text-ink">অতিরিক্ত তথ্য (ঐচ্ছিক)</legend>
-        <Field label="নোট" name="customerNote" error={fieldErrors.customerNote}>
-          <textarea
-            name="customerNote"
-            rows={3}
-            className="input resize-none"
-            placeholder="আর কোনো তথ্য থাকলে লিখুন"
-          />
-        </Field>
-      </fieldset>
 
       {formError && (
         <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">

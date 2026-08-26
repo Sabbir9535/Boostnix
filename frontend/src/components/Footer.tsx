@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <GrowthMark />
-            <span className="font-display text-lg font-semibold text-paper">Upsurge</span>
+            <span className="font-display text-lg font-semibold text-paper">Boostnix</span>
           </div>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-paper/60">
             সহজে ফলোয়ার, লাইক ও ভিউ অর্ডার করুন। কোনো অ্যাকাউন্টের প্রয়োজন নেই।
@@ -39,7 +39,7 @@ export default function Footer() {
 
       <div className="border-t border-nightline">
         <div className="container-page flex flex-col gap-2 py-5 text-xs text-paper/40 sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Upsurge. সর্বস্বত্ব সংরক্ষিত।</span>
+          <span>© {new Date().getFullYear()} Boostnix. All rights reserved.</span>
           <span>পেমেন্ট যাচাইয়ের পর প্রতিটি অর্ডার ম্যানুয়ালি সম্পন্ন করা হয়।</span>
         </div>
       </div>

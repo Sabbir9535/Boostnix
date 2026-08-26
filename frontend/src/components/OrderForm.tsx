@@ -6,7 +6,7 @@ import { Service } from "@/types";
 import { ApiRequestError, createOrder } from "@/lib/api";
 
 const paymentMethods = ["bKash", "Nagad", "Rocket", "ব্যাংক ট্রান্সফার"];
-const paymentNumber = process.env.NEXT_PUBLIC_PAYMENT_NUMBER ?? "01XXXXXXXXX";
+const paymentNumber = process.env.NEXT_PUBLIC_PAYMENT_NUMBER ?? "Nagad & Rocket 01305054868 Bkash 01618666866";
 const fixedFollowerLikeRate = 0.0605;
 
 type FieldErrors = Record<string, string>;

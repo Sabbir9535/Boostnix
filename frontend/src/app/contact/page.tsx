@@ -18,11 +18,11 @@ export default function ContactPage() {
       <div className="mt-10 grid gap-6 sm:grid-cols-2">
         <div className="rounded-2xl border border-line bg-white p-6">
           <h2 className="font-display text-base font-semibold text-ink">Email</h2>
-          <p className="mt-2 text-sm text-muted">support@upsurge.example</p>
+          <p className="mt-2 text-sm text-muted">zaco.com.bd@gmail.com</p>
         </div>
         <div className="rounded-2xl border border-line bg-white p-6">
           <h2 className="font-display text-base font-semibold text-ink">WhatsApp</h2>
-          <p className="mt-2 text-sm text-muted">+880 1XXX-XXXXXX</p>
+          <p className="mt-2 text-sm text-muted">+880 1305054868</p>
         </div>
       </div>
 

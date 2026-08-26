@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono, Noto_Sans_Bengali } from "next/font/google";
-// @ts-expect-error CSS is bundled by Next.js and has no TypeScript declarations.
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

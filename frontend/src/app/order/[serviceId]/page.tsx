@@ -4,7 +4,7 @@ import { getServiceById } from "@/lib/api";
 import { ApiRequestError } from "@/lib/api";
 import OrderForm from "@/components/OrderForm";
 
-export const metadata = { title: "অর্ডার — Upsurge" };
+export const metadata = { title: "অর্ডার — Boostnix" };
 
 export default async function OrderPage({ params }: { params: { serviceId: string } }) {
   try {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata = { title: "কীভাবে করবেন — Upsurge" };
+export const metadata = { title: "কীভাবে করবেন — Boostnix" };
 
 const steps = [
   {

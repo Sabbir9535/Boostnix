@@ -1,6 +1,6 @@
 import TrackOrderForm from "@/components/TrackOrderForm";
 
-export const metadata = { title: "অর্ডার ট্র্যাক — Upsurge" };
+export const metadata = { title: "অর্ডার ট্র্যাক — Boostnix" };
 
 export default function TrackPage({
   searchParams,

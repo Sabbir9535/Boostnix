@@ -1,7 +1,7 @@
 import { getServices } from "@/lib/api";
 import ServicesGrid from "@/components/ServicesGrid";
 
-export const metadata = { title: "সার্ভিস — Upsurge" };
+export const metadata = { title: "সার্ভিস — Boostnix" };
 
 export default async function ServicesPage() {
   let services: Awaited<ReturnType<typeof getServices>>["services"] = [];

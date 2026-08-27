@@ -1,4 +1,4 @@
-export const metadata = { title: "যোগাযোগ — Upsurge" };
+export const metadata = { title: "যোগাযোগ — Boostnix" };
 
 export default function ContactPage() {
   return (

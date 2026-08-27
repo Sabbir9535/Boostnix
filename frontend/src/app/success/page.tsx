@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const metadata = { title: "অর্ডার জমা হয়েছে — Upsurge" };
+export const metadata = { title: "অর্ডার জমা হয়েছে — Boostnix" };
 
 export default function SuccessPage({
   searchParams,

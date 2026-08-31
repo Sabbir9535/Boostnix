@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono, Noto_Sans_Bengali } from "next/fo
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsappBtn";
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

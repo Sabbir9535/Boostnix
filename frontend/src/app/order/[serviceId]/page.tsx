@@ -6,6 +6,10 @@ import OrderForm from "@/components/OrderForm";
 
 export const metadata = { title: "অর্ডার — Boostnix" };
 
+function localizedCategory(category: string) {
+  return { Facebook: "ফেসবুক", Instagram: "ইনস্টাগ্রাম", TikTok: "টিকটক", YouTube: "ইউটিউব" }[category] ?? category;
+}
+
 export default async function OrderPage({ params }: { params: { serviceId: string } }) {
   try {
     const { service } = await getServiceById(params.serviceId);
@@ -18,7 +22,7 @@ export default async function OrderPage({ params }: { params: { serviceId: strin
 
         <div className="mt-4 max-w-xl">
           <span className="text-xs font-semibold uppercase tracking-widest text-signaldim">
-            {service.category === "Facebook" ? "ফেসবুক" : service.category === "Instagram" ? "ইনস্টাগ্রাম" : service.category === "YouTube" ? "ইউটিউব" : service.category}
+            {localizedCategory(service.category)}
           </span>
           <h1 className="mt-2 font-display text-3xl font-semibold text-ink sm:text-4xl">
             {service.name}

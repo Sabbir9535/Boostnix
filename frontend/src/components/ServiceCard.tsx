@@ -9,16 +9,18 @@ const platformMarks: Record<string, { label: string; className: string }> = {
   YouTube: { label: "▶", className: "bg-[#ff0000] text-white" },
 };
 
-function localizedServiceName(service: Service) {
-  if (service.name.includes("Followers")) return `${service.category === "Facebook" ? "ফেসবুক" : service.category === "Instagram" ? "ইনস্টাগ্রাম" : service.category === "YouTube" ? "ইউটিউব" : service.category} ফলোয়ার`;
-  if (service.name.includes("Likes")) return `${service.category === "Facebook" ? "ফেসবুক" : "ইনস্টাগ্রাম"} লাইক`;
-  if (service.name.includes("Views")) return `${service.category === "Facebook" ? "ফেসবুক" : service.category === "Instagram" ? "ইনস্টাগ্রাম" : "ইউটিউব"} ভিউ`;
-  if (service.name.includes("Subscribers")) return "ইউটিউব সাবস্ক্রাইবার";
-  return service.name;
-}
-
 function localizedCategory(category: string) {
   return { Facebook: "ফেসবুক", Instagram: "ইনস্টাগ্রাম", TikTok: "টিকটক", YouTube: "ইউটিউব" }[category] ?? category;
+}
+
+function localizedServiceName(service: Service) {
+  const platform = localizedCategory(service.category);
+
+  if (service.name.includes("Followers")) return `${platform} ফলোয়ার`;
+  if (service.name.includes("Likes")) return `${platform} লাইক`;
+  if (service.name.includes("Views")) return `${platform} ভিউ`;
+  if (service.name.includes("Subscribers")) return `${platform} সাবস্ক্রাইবার`;
+  return service.name;
 }
 
 export default function ServiceCard({ service }: { service: Service }) {

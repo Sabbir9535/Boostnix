@@ -4,6 +4,10 @@ import { useMemo, useState } from "react";
 import { Service } from "@/types";
 import ServiceCard from "./ServiceCard";
 
+function localizedCategory(category: string) {
+  return { Facebook: "ফেসবুক", Instagram: "ইনস্টাগ্রাম", TikTok: "টিকটক", YouTube: "ইউটিউব" }[category] ?? category;
+}
+
 export default function ServicesGrid({ services }: { services: Service[] }) {
   const categories = useMemo(() => {
     const set = new Set(services.map((s) => s.category));
@@ -29,7 +33,7 @@ export default function ServicesGrid({ services }: { services: Service[] }) {
                 : "border-line bg-white text-ink/70 hover:border-ink/40"
             }`}
           >
-            {c === "Facebook" ? "ফেসবুক" : c === "Instagram" ? "ইনস্টাগ্রাম" : c === "TikTok" ? "টিকটক" : c === "YouTube" ? "ইউটিউব" : c}
+            {c === "সব" ? c : localizedCategory(c)}
           </button>
         ))}
       </div>

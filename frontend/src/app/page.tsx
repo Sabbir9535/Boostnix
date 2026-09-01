@@ -50,7 +50,13 @@ export default async function HomePage() {
           </div>
           <div className="relative rounded-3xl border border-paper/10 bg-paper/[0.06] p-5 shadow-2xl backdrop-blur sm:p-7">
             <div className="flex items-center justify-between border-b border-paper/10 pb-4"><span className="text-sm font-semibold">জনপ্রিয় প্ল্যাটফর্ম</span><span className="rounded-full bg-signal/15 px-3 py-1 text-xs text-signal">সক্রিয়</span></div>
-            <div className="mt-5 space-y-3">{platforms.map((platform) => <div key={platform.name} className="flex items-center justify-between rounded-xl bg-white/[0.08] p-4"><span className="flex items-center gap-3"><span className={`flex h-10 w-10 items-center justify-center rounded-lg text-lg font-bold text-white ${platform.color}`}>{platform.mark}</span><span className="font-semibold">{platform.name}</span></span><span className="text-xs text-paper/50">{platform.services.length} সার্ভিস →</span></div>)}</div>
+            <div className="mt-5 space-y-3">{platforms.map((platform) => <Link 
+            key={platform.name}
+        href="/services"
+            >
+            <div className="flex items-center justify-between rounded-xl bg-white/[0.08] p-4"><span className="flex items-center gap-3"><span className={`flex h-10 w-10 items-center justify-center rounded-lg text-lg font-bold text-white ${platform.color}`}>{platform.mark}</span><span className="font-semibold">{platform.name}</span></span><span className="text-xs text-paper/50">{platform.services.length} সার্ভিস →</span></div>
+            
+            </Link> )}</div>
           </div>
         </div>
       </section>

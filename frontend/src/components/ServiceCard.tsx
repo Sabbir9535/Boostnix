@@ -15,11 +15,15 @@ function localizedCategory(category: string) {
 
 function localizedServiceName(service: Service) {
   const platform = localizedCategory(service.category);
+  const normalizedName = service.name.toLowerCase();
 
-  if (service.name.includes("Followers")) return `${platform} ফলোয়ার`;
-  if (service.name.includes("Likes")) return `${platform} লাইক`;
-  if (service.name.includes("Views")) return `${platform} ভিউ`;
-  if (service.name.includes("Subscribers")) return `${platform} সাবস্ক্রাইবার`;
+  if (normalizedName.includes("page likes")) return `${platform} পেজ লাইক`;
+  if (normalizedName.includes("post likes")) return `${platform} পোস্ট লাইক`;
+  if (normalizedName.includes("video views")) return `${platform} ভিডিও ভিউ`;
+  if (normalizedName.includes("followers")) return `${platform} ফলোয়ার`;
+  if (normalizedName.includes("likes")) return `${platform} লাইক`;
+  if (normalizedName.includes("views")) return `${platform} ভিউ`;
+  if (normalizedName.includes("subscribers")) return `${platform} সাবস্ক্রাইবার`;
   return service.name;
 }
 
